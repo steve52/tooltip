@@ -1,0 +1,7 @@
+#tooltip-wrapper {
+  border: 1px solid #ccc;
+  background-color: #eee;
+  padding: 10px;
+  min-width: 200px;
+  text-align: center;
+}

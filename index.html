@@ -1,0 +1,32 @@
+<html>
+<head>
+  <title>Simple Tooltip</title>
+
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="main.js"></script>
+
+  <script>
+    function onTestClick(e) {
+      $('test1').showToolTip({
+        title: 'This is a title',
+        content: 'This is content',
+        onClose: (e) => {
+          console.log('onclose', e)
+        }
+      });
+    }
+  </script>
+
+</head>
+<body>
+  <br/><br/><br/><br/><br/><br/><br/><br/>
+  <span id="test1" onclick="onTestClick()">TEST</span>
+  <span id="test2" onclick="$('test2').showToolTip({
+    title: 'This is title 2',
+    content: 'This is content 2',
+    onClose: () => {console.log('closing 2')}
+    });">
+    TEST
+  </span>
+</body>
+</html>
